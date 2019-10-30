@@ -9,8 +9,9 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             AnimalFactory factory = new AnimalFactory();
-            Train train = new Train();
-            train.GetWagons(factory.CreateAnimals(Convert.ToInt32(Console.ReadLine())));
+            //Train train = new Train(factory.CreateAnimals(Convert.ToInt32(Console.ReadLine())));
+            Train train = new Train(OnlyHerbivores());
+            train.GetWagons();
 
             //Call for Unit Tests
             //train.GetWagons(MoreBigHerbivore());
@@ -28,12 +29,12 @@ namespace ConsoleApp1
 
                 List<Animal> UnitOneAnimals = new List<Animal>();
 
-                UnitOneAnimals.Add(new Animal(Animal.EatTypes.Carnivoor, 5));
-                UnitOneAnimals.Add(new Animal(Animal.EatTypes.Carnivoor, 3));
-                UnitOneAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 5));
-                UnitOneAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 5));
-                UnitOneAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 5));
-                UnitOneAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 5));
+                UnitOneAnimals.Add(new Animal(Animal.EatType.Carnivoor, 5));
+                UnitOneAnimals.Add(new Animal(Animal.EatType.Carnivoor, 3));
+                UnitOneAnimals.Add(new Animal(Animal.EatType.Herbivoor, 5));
+                UnitOneAnimals.Add(new Animal(Animal.EatType.Herbivoor, 5));
+                UnitOneAnimals.Add(new Animal(Animal.EatType.Herbivoor, 5));
+                UnitOneAnimals.Add(new Animal(Animal.EatType.Herbivoor, 5));
 
                 return UnitOneAnimals;
             }
@@ -53,18 +54,18 @@ namespace ConsoleApp1
 
                 List<Animal> UnitTwoAnimals = new List<Animal>();
 
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Carnivoor, 5));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Carnivoor, 5));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Carnivoor, 3));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Carnivoor, 3));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Carnivoor, 1));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Carnivoor, 1));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 5));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 5));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 3));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 3));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 1));
-                UnitTwoAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 1));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Carnivoor, 5));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Carnivoor, 5));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Carnivoor, 3));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Carnivoor, 3));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Carnivoor, 1));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Carnivoor, 1));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Herbivoor, 5));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Herbivoor, 5));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Herbivoor, 3));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Herbivoor, 3));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Herbivoor, 1));
+                UnitTwoAnimals.Add(new Animal(Animal.EatType.Herbivoor, 1));
 
                 return UnitTwoAnimals;
             }
@@ -79,12 +80,12 @@ namespace ConsoleApp1
 
                 List<Animal> UnitThreeAnimals = new List<Animal>();
 
-                UnitThreeAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 5));
-                UnitThreeAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 5));
-                UnitThreeAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 3));
-                UnitThreeAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 3));
-                UnitThreeAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 1));
-                UnitThreeAnimals.Add(new Animal(Animal.EatTypes.Herbivoor, 1));
+                UnitThreeAnimals.Add(new Animal(Animal.EatType.Herbivoor, 5));
+                UnitThreeAnimals.Add(new Animal(Animal.EatType.Herbivoor, 5));
+                UnitThreeAnimals.Add(new Animal(Animal.EatType.Herbivoor, 3));
+                UnitThreeAnimals.Add(new Animal(Animal.EatType.Herbivoor, 3));
+                UnitThreeAnimals.Add(new Animal(Animal.EatType.Herbivoor, 1));
+                UnitThreeAnimals.Add(new Animal(Animal.EatType.Herbivoor, 1));
 
                 return UnitThreeAnimals;
             }

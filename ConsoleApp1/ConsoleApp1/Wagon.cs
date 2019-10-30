@@ -6,13 +6,24 @@ namespace ConsoleApp1
 {
     class Wagon
     {
-        public int PointsLeft { get; set; }
-        public List<Animal> AnimalsForWagon  = new List<Animal>();
+        public int capacityLeft { get; private set; }
+        public List<Animal> animalsForWagon  = new List<Animal>();
 
         public Wagon(List<Animal> animals)
         {
-            PointsLeft = 10;
-            this.AnimalsForWagon = animals;
+            this.capacityLeft = 10;
+            this.animalsForWagon = animals;
+        }
+
+        public void AddAnimalToWagon(Animal animal)
+        {
+            this.animalsForWagon.Add(animal);
+            this.capacityLeft -= animal.size;
+        }
+
+        public List<Animal> GetAnimalsInWagon()
+        {
+            return animalsForWagon;
         }
     }
 }

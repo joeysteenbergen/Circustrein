@@ -6,18 +6,18 @@ namespace ConsoleApp1
 {
     public class Animal
     {
-        public enum EatTypes
+        public enum EatType
         {
             Carnivoor,
             Herbivoor
         }
-        public EatTypes EatType;
-        public int Size;
+        public EatType eatType;
+        public int size;
 
-        public Animal(EatTypes eatType, int size)
+        public Animal(EatType eatType, int size)
         {
-            this.EatType = eatType;
-            this.Size = size;
+            this.eatType = eatType;
+            this.size = size;
         }
     }
 }
