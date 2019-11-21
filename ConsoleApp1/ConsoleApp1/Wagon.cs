@@ -15,11 +15,11 @@ namespace ConsoleApp1
             this.animalsForWagon = animals;
         }
 
-        public void AddAnimalToWagon(Animal animal)
+        /*public void AddAnimalToWagon(Animal animal)
         {
             this.animalsForWagon.Add(animal);
             this.capacityLeft -= animal.size;
-        }
+        }*/
 
         public List<Animal> GetAnimalsInWagon()
         {

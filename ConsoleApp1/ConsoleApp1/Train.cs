@@ -40,18 +40,18 @@ namespace ConsoleApp1
                         Animal Carnivore = wagon.animalsForWagon.Find(z => z.eatType == Animal.EatType.Carnivoor);
                         if (animal != null && Carnivore != null && animal.size <= wagon.capacityLeft && Carnivore.size < animal.size)
                         {
-                            wagon.AddAnimalToWagon(animal);
+                            wagon.animalsForWagon.Add(animal);
                         }
                         else if(animal != null && animal.size <= wagon.capacityLeft)
                         {
-                            wagon.AddAnimalToWagon(animal);
+                            wagon.animalsForWagon.Add(animal);
                         }
                     }
                 }
                 else
                 {
                     Wagon wagon = new Wagon(new List<Animal>());
-                    wagon.AddAnimalToWagon(animal);
+                    wagon.animalsForWagon.Add(animal);
                     FilledWagons.Add(wagon);
                 }
             }
