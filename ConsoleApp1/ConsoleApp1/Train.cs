@@ -5,16 +5,16 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class Train
+    public class Train
     {
-        private List<Wagon> wagonList = new List<Wagon>();
+        public List<Wagon> wagonList = new List<Wagon>();
 
-        public Train(List<Animal> cargoList)
+        public Train()
         {
-            this.wagonList = SortCargo(cargoList);
+            
         }
 
-        public void GetWagons()
+        public void PrintWagonsList()
         {
             for(int i = 0; i < wagonList.Count(); i++)
             {
@@ -22,41 +22,53 @@ namespace ConsoleApp1
                 Console.WriteLine("Wagon " + (i + 1));
                 for(int x = 0; x < wagon.animalsForWagon.Count(); x++)
                 {
-                    Console.WriteLine(wagon.animalsForWagon[x].eatType + " " + wagon.animalsForWagon[x].size);
+                    Console.WriteLine(wagon.animalsForWagon[x].EatType + " " + wagon.animalsForWagon[x].Size);
                 } 
             }
         }
 
-        public List<Wagon> SortCargo(List<Animal> cargoToSort)
+        public void SortCargo(List<Animal> cargoToSort)
         {
-            List<Wagon> FilledWagons = new List<Wagon>();
-
-            foreach (Animal animal in cargoToSort)
+            List<Animal> sortedCargo = cargoToSort.OrderBy(x => x.EatType).ThenByDescending(x => x.Size).ToList();
+            foreach (Animal animal in sortedCargo)
             {
-                if (animal.eatType != Animal.EatType.Carnivoor && FilledWagons != null && FilledWagons.Count() != 0 && FilledWagons.Count(z => z.capacityLeft != 0) != 0)
+                if (animal.EatType != EatType.Carnivoor && this.wagonList != null && this.wagonList.Count() != 0 && this.wagonList.Count(z => z.capacityLeft != 0) != 0)
                 {
-                    foreach(Wagon wagon in FilledWagons)
+                    Wagon availableWagon = this.wagonList.Find(x => x.animalsForWagon.Exists(z => (int)z.Size < (int)animal.Size) && (int)animal.Size <= x.capacityLeft);
+                    Wagon wagonWithoutCarnivores = this.wagonList.Find(x => !x.animalsForWagon.Exists(z => z.EatType == EatType.Carnivoor) && (int)animal.Size <= x.capacityLeft);
+
+                    if (availableWagon != null)
                     {
-                        Animal Carnivore = wagon.animalsForWagon.Find(z => z.eatType == Animal.EatType.Carnivoor);
-                        if (animal != null && Carnivore != null && animal.size <= wagon.capacityLeft && Carnivore.size < animal.size)
-                        {
-                            wagon.animalsForWagon.Add(animal);
-                        }
-                        else if(animal != null && animal.size <= wagon.capacityLeft)
-                        {
-                            wagon.animalsForWagon.Add(animal);
-                        }
+                        availableWagon.animalsForWagon.Add(animal);
+                        availableWagon.capacityLeft -= (int)animal.Size;
+                    }
+
+                    else if(wagonWithoutCarnivores != null)
+                    {
+                        wagonWithoutCarnivores.animalsForWagon.Add(animal);
+                        wagonWithoutCarnivores.capacityLeft -= (int)animal.Size;
+                    }
+
+                    else
+                    {
+                        Wagon wagon = new Wagon(new List<Animal>());
+                        wagon.animalsForWagon.Add(animal);
+                        wagon.capacityLeft -= (int)animal.Size;
+                        this.wagonList.Add(wagon);
                     }
                 }
                 else
                 {
                     Wagon wagon = new Wagon(new List<Animal>());
                     wagon.animalsForWagon.Add(animal);
-                    FilledWagons.Add(wagon);
+                    wagon.capacityLeft -= (int)animal.Size;
+                    this.wagonList.Add(wagon);
                 }
             }
-
-            return FilledWagons;
+        }
+        public List<Wagon> GetAllWagons()
+        {
+            return wagonList;
         }
     }
 }

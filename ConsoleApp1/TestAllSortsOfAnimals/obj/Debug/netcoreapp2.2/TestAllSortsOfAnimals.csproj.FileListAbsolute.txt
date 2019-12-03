@@ -1,0 +1,17 @@
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\obj\Debug\netcoreapp2.2\TestAllSortsOfAnimals.csprojAssemblyReference.cache
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\obj\Debug\netcoreapp2.2\TestAllSortsOfAnimals.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\obj\Debug\netcoreapp2.2\TestAllSortsOfAnimals.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\obj\Debug\netcoreapp2.2\TestAllSortsOfAnimals.AssemblyInfo.cs
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\TestAllSortsOfAnimals.deps.json
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\TestAllSortsOfAnimals.runtimeconfig.json
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\TestAllSortsOfAnimals.runtimeconfig.dev.json
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\TestAllSortsOfAnimals.dll
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\TestAllSortsOfAnimals.pdb
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\ConsoleApp1.dll
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\bin\Debug\netcoreapp2.2\ConsoleApp1.pdb
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\obj\Debug\netcoreapp2.2\TestAllSortsOfAnimals.csproj.CopyComplete
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\obj\Debug\netcoreapp2.2\TestAllSortsOfAnimals.dll
+C:\Users\Gebruiker\Desktop\Fontys\Semester 2\Individueel\Circustrein\Circustrein\ConsoleApp1\TestAllSortsOfAnimals\obj\Debug\netcoreapp2.2\TestAllSortsOfAnimals.pdb
